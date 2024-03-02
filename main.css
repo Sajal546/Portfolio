@@ -1,0 +1,67 @@
+/* Main Section conatins Basic Intro, Image and Work Experience! */
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background: #16167e;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 50px;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr {
+    border: 0;
+    background: rgba(201, 156, 225, 0.979);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondSection .box {
+    background-color: rgb(148, 123, 209);
+    width: auto;
+    height: 80px;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+
+}
