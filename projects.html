@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects of Sajal</title>
+    <title>Sajal's Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="core.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="utility.css">
 </head>
+
 <body>
     <!-- Header Section conatins Navigation Bar and Logo! -->
     <header>
@@ -15,7 +22,7 @@
             <div class="left">Projects of Sajal</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -25,43 +32,77 @@
         </nav>
     </header>
 
-    <!-- This footer Section conatins Contacts and Copyrights! -->
-    <footer>
-        <div class="footer">
-            <div class="footerfirst">
-                <h3>Sajal's Developer Portfolio</h3>
+    <!-- Main Section conatins Basic Intro, Image and Work Experience! -->
+    <main>
+        <section class="firstSection">
+
+            <div class="leftSection">
+                Hello:) It's <span class="purple">Sajal</span> here
+                <div>I'm a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button type="button"
+                        onclick="window.open('https://docs.google.com/document/d/1_CYsZu4Kd1_GEcdKyN1ts1x6X7UEul9ObOe5ntZZRKg/edit?usp=drive_link');"
+                        class="btn">Fetch Resume</button>
+                    <button type="button" onclick="window.open('https://github.com/Sajal546');" class="btn">Visit
+                        Github</button>
+                </div>
             </div>
-            <div class="footersecond">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
+
+            <div class="rightSection">
+                <img src="pg.png" alt="Developer Image">
             </div>
-            <div class="footerthird">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
+        </section>
+
+        <!-- This footer Section conatins Contacts and Copyrights! -->
+        <footer>
+            <div class="footer">
+                <div class="footerfirst">
+                    <h3>Sajal's Developer Portfolio</h3>
+                </div>
+                <div class="footersecond">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footerthird">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footerfourth">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footerfourth">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
+            <div class="footerCopyrights">
+                Copyright &#169; sajalsdeveloperportfolio.com | All Rights Reserved
             </div>
-        </div>
-        <div class="footerCopyrights">
-            Copyright &#169; sajalsdeveloperportfolio.com | All Rights Reserved
-        </div>
-    </footer>
+        </footer>
+
+        <!-- This part consist of Animation of Basic Intro -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['<i>Web</i> Designer.', '<i>Web</i> Developer.'],
+                typeSpeed: 50,
+            });
+        </script>
 </body>
+
 </html>
