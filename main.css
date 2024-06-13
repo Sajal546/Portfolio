@@ -21,11 +21,19 @@
 .rightSection img {
     width: 80%;
 }
-
+.skills{
+    max-width: 83vw;
+    margin: auto;
+}
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 123, 209);
+    padding: 20px;
 }
 
 main hr {
@@ -36,8 +44,6 @@ main hr {
 }
 
 .secondSection .box {
-    background-color: rgb(148, 123, 209);
-    width: auto;
     height: 80px;
     padding: 56px 0;
     display: flex;
