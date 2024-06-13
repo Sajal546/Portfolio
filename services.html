@@ -2,297 +2,438 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajal's Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="core.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="button.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajal's Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="core.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="button.css">
+  <style>
+    .services-main {
+      /* padding: 2em; */
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .skills-section,
+    .services-section,
+    .technologies-section {
+      margin: 2em 0;
+    }
+
+    .skills-container,
+    .services-container,
+    .technologies-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    .skill,
+    .service,
+    .technology {
+      background:rgb(166, 230, 71);
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: calc(50% - 2em);
+      max-width: 300px;
+      position: relative;
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .skill h3,
+    .service h3,
+    .technology h3 {
+      margin-bottom: 0.5em;
+    }
+    .services-main h1 {
+      margin-bottom: 30px;
+      color: rgb(253, 60, 214);
+    }
+
+    .skill p,.service p,
+    .technology p {
+      margin-top: 2em;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1em;
+      border-radius: 8px;
+      color: red;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+
+      .skills-container,
+      .services-container,
+      .technologies-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Header Section conatins Navigation Bar and Logo! -->
-    <header>
-        <nav>
-            <div class="left">Services by Sajal</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contactme.html">Contact Me</a></li>
-                </ul>
+  <!-- Header Section conatins Navigation Bar and Logo! -->
+  <header>
+    <nav>
+      <div class="left">Services by Sajal</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="firstSection">
+
+      <div class="leftSection">
+        Hello:) It's <span class="purple">Sajal</span> here
+        <div>Here are the Services</div>
+        <span id="element"></span>
+        <div class="buttons">
+
+          </button>
+          <button type="button"
+            onclick="window.open('https://docs.google.com/document/d/1_CYsZu4Kd1_GEcdKyN1ts1x6X7UEul9ObOe5ntZZRKg/edit?usp=drive_link');"
+            class="btn">Fetch Resume
+            <div class="star-1">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
             </div>
-        </nav>
-    </header>
-
-    <main>
-
-        <section class="firstSection">
-
-            <div class="leftSection">
-                Hello:) It's <span class="purple">Sajal</span> here
-                <div>Here are the Services</div>
-                <span id="element"></span>
-                <div class="buttons">
-
-                </button>
-                <button type="button"
-                  onclick="window.open('https://docs.google.com/document/d/1_CYsZu4Kd1_GEcdKyN1ts1x6X7UEul9ObOe5ntZZRKg/edit?usp=drive_link');"
-                  class="btn">Fetch Resume
-                  <div class="star-1">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-2">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-3">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-4">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-5">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-6">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                </button>
-                <button type="button" onclick="window.open('https://github.com/Sajal546');" class="btn">Visit
-                  Github
-                  <div class="star-1">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-2">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-3">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-4">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-5">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="star-6">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
-                      style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                      version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                      <defs></defs>
-                      <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path
-                          d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                          class="fil0"></path>
-                      </g>
-                    </svg>
-                  </div>
-                </button>
-      
-              </div>
+            <div class="star-2">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
             </div>
-
-            <div class="rightSection">
-                <img src="pg.png" alt="Developer Image">
+            <div class="star-3">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
             </div>
-        </section>
+            <div class="star-4">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-5">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-6">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+          </button>
+          <button type="button" onclick="window.open('https://github.com/Sajal546');" class="btn">Visit
+            Github
+            <div class="star-1">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-2">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-3">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-4">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-5">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-6">
+              <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
+                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"></path>
+                </g>
+              </svg>
+            </div>
+          </button>
 
-        <div class="skills">
-            <span>What I have done so far</span>
-            <h1>Skills</h1>
         </div>
-        <section class="secondSection">
-            <div class="box">
-                <div class="logo"><img src="Skills/html5.png" alt="HTML5 Logo"></div>
-                <div class="logo"><img src="Skills/CSS.png" alt="CSS Logo"></div>
-                <div class="logo"><img src="Skills/javascript.png" alt="Javascript Logo"></div>
-                <div class="logo"><img src="Skills/nodejs.png" alt="Node.JS Logo"></div>
-                <div class="logo"><img src="Skills/mongoDB.png" alt="MongoDB Logo"></div>
-            </div>
+      </div>
 
-            <div class="box">
-                <div class="logo"><img src="Skills/Git.png" alt="Git.png Logo"></div>
-                <div class="logo"><img src="Skills/Github.png" alt="Github.png Logo"></div>
-                <div class="logo"><img src="Skills/C.png" alt="C.png Logo"></div>
-                <div class="logo"><img src="Skills/C++.png" alt="C++ Logo"></div>
-                <div class="logo"><img src="Skills/Python.png" alt="Python Logo"></div>
-            </div>
+      <div class="rightSection">
+        <img src="pg.png" alt="Developer Image">
+      </div>
+    </section>
+  </main>
 
-            <div class="box">
-                <div class="logo"><img src="Skills/Postman.png" alt="Postman Logo"></div>
-                <div class="logo"><img src="Skills/Bootstrap.png" alt="Bootstrap Logo"></div>
-                <div class="logo"><img src="Skills/VSCode.png" alt="VSCode Logo"></div>
-                <div class="logo"><img src="Skills/Figma.png" alt="Figma Logo"></div>
-                <div class="logo"><img src="Skills/Google Font.png" alt="Google Font Logo"></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- This footer Section conatins Contacts and Copyrights! -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Sajal's Developer Portfolio</h4>
-                <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul class="footer-links">
-                  <li><a href="index.html">Portfolio</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="contactme.html">Contact Me</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <p>Email: <a href="mailto:sajalmandal1800@gmail.com">sajalmandal1800@gmail.com</a></p>
-                <p>Phone: +91 8637573887</p>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Me</h4>
-                <div class="social-icons">
-                    <a href="https://github.com/sajal546" target="_blank" class="social-icon">GitHub</a>
-                    <a href="https://x.com/Sajal___" target="_blank" class="social-icon">Twitter</a>
-                    <a href="https://www.linkedin.com/in/sajal-mandal-204665201/" target="_blank" class="social-icon">LinkedIn</a>
-                </div>
-            </div>
+  <main class="services-main">
+    <section class="skills-section">
+      <h1>My Skills</h1>
+      <div class="skills-container">
+        <div class="skill" style="background-image: url('Skills/html5.png');">
+          <h3>HTML5</h3>
+          <p>Proficient in HTML5 for structuring modern web content.</p>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy; sajalsdeveloperportfolio.com | All rights reserved.</p>
+        <div class="skill" style="background-image: url('Skills/css.png');">
+          <h3>CSS3</h3>
+          <p>Experienced in using CSS3 for styling and layout of web pages.</p>
         </div>
-    </footer>
+        <div class="skill" style="background-image: url('Skills/javascript.png');">
+          <h3>JavaScript</h3>
+          <p>Proficient in JavaScript for creating interactive web experiences.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/react.png');">
+          <h3>React</h3>
+          <p>Skilled in building dynamic single-page applications with React.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/nodejs.png');">
+          <h3>Node.js</h3>
+          <p>Experienced in backend development with Node.js and Express.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/expressjs.png');">
+          <h3>Express.js</h3>
+          <p>Proficient in building RESTful APIs and web applications using Express.js.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/mongodb.png');">
+          <h3>MongoDB</h3>
+          <p>Proficient in using MongoDB for efficient database management and building scalable applications.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/c.png');">
+          <h3>C</h3>
+          <p>Experienced in system-level programming with the C language.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/c++.png');">
+          <h3>C++</h3>
+          <p>Skilled in object-oriented programming using C++.</p>
+        </div>
+        <div class="skill" style="background-image: url('Skills/python.png');">
+          <h3>Python</h3>
+          <p>Proficient in Python for scripting, automation, and web development.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- This part consist of Animation of Basic Intro -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <section class="services-section">
+      <h1>My Services</h1>
+      <div class="services-container">
+        <div class="service" style="background-image: url('Skills/web\ development.png');">
+          <h3>Web Development</h3>
+          <p>I create modern, responsive websites tailored to your needs.</p>
+        </div>
+        <div class="service" style="background-image: url('Skills/web\ design.png');">
+          <h3>Web Design</h3>
+          <p>Designing user-friendly interfaces with a focus on aesthetics and usability.</p>
+        </div>
+        <div class="service" style="background-image: url('Skills/SEO\ Optimization.png');">
+          <h3>SEO Optimization</h3>
+          <p>Improving website visibility and search engine rankings.</p>
+        </div>
+        <div class="service" style="background-image: url('Skills/Consulting.png');">
+          <h3>Consulting</h3>
+          <p>Providing expert advice to help you achieve your digital goals.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['You <i>Demands</i>.', 'We <i>Offers</i>.'],
-            typeSpeed: 50,
-        });
-    </script>
+    <section class="technologies-section">
+      <h1>Technologies I Use</h1>
+      <div class="technologies-container">
+        <div class="technology" style="background-image: url('Skills/vscode.png');">
+          <h3>Visual Studio Code</h3>
+          <p>My go-to code editor for all development projects.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/figma.png');">
+          <h3>Figma</h3>
+          <p>Designing beautiful interfaces and user experiences.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/Git.png');">
+          <h3>Git</h3>
+          <p>Version control for tracking changes and collaborating on projects.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/github.png');">
+          <h3>GitHub</h3>
+          <p>Hosting and reviewing code, managing projects, and building software.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/bootstrap.png');">
+          <h3>Bootstrap</h3>
+          <p>Building responsive, mobile-first websites quickly and efficiently.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/postman.png');">
+          <h3>Postman</h3>
+          <p>API development environment to streamline testing and integration.</p>
+        </div>
+        <div class="technology" style="background-image: url('Skills/Google\ Font.png');">
+          <h3>Google Fonts</h3>
+          <p>Enhancing web typography with a wide range of free fonts.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- This footer Section conatins Contacts and Copyrights! -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Sajal's Developer Portfolio</h4>
+        <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:sajalmandal1800@gmail.com">sajalmandal1800@gmail.com</a></p>
+        <p>Phone: +91 8637573887</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="https://github.com/sajal546" target="_blank" class="social-icon">GitHub</a>
+          <a href="https://x.com/Sajal___" target="_blank" class="social-icon">Twitter</a>
+          <a href="https://www.linkedin.com/in/sajal-mandal-204665201/" target="_blank" class="social-icon">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; sajalsdeveloperportfolio.com | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- This part consist of Animation of Basic Intro -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['You <i>Demands</i>.', 'We <i>Offers</i>.'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 
 </html>
