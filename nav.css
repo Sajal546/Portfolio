@@ -5,6 +5,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: rgb(4, 4, 69);
+    padding: 20px 0;
 }
 
 nav ul {
