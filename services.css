@@ -1,0 +1,73 @@
+.services-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-section,
+.services-section,
+.technologies-section {
+    margin: 2em 0;
+}
+
+.skills-container,
+.services-container,
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.skill,
+.service,
+.technology {
+    background: rgb(166, 230, 71);
+    padding: 1em;
+    border-radius: 8px;
+    width: calc(50% - 2em);
+    max-width: 300px;
+    position: relative;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill h3,
+.service h3,
+.technology h3 {
+    margin-bottom: 0.5em;
+}
+
+.services-main h1 {
+    margin-bottom: 30px;
+    color: rgb(253, 60, 214);
+}
+
+.skill p,
+.service p,
+.technology p {
+    margin-top: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+    color: red;
+    backdrop-filter: contrast(1.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .skills-container,
+    .services-container,
+    .technologies-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill p,
+    .service p,
+    .technology p {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
