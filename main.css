@@ -18,24 +18,26 @@
 .leftSection .buttons {
     padding: 50px 0;
 }
+
 .rightSection img {
     width: 80%;
 }
-.skills{
+
+.skills {
     max-width: 83vw;
     margin: auto;
 }
+
 .secondSection {
     max-width: 80vw;
-    margin: auto;
+    margin: 80px auto;
     height: auto;
     overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(148, 123, 209);
     border-radius: 20px;
-    padding: 20px;
-    padding-bottom: 60px;
+    padding: 60px;
 }
 
 main hr {
@@ -51,7 +53,8 @@ main hr {
     display: flex;
     justify-content: space-around;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
@@ -61,6 +64,43 @@ main hr {
     height: 100px;
 
 }
+
 ul {
     list-style-position: inside;
+}
+
+.thirdSection {
+    max-width: 80vw;
+    margin: 80px auto;
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 116, 209);
+    border-radius: 20px;
+    padding: 60px;
+
+}
+
+.thirdSection a:hover {
+    text-decoration: underline;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.thirdSection h3 {
+    color: rgb(82, 255, 82);
+}
+
+.thirdSection h1 {
+    color: rgb(255, 23, 209);
+}
+
+.thirdSection li {
+    margin: 5px;
 }
