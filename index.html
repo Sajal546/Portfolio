@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="utility.css">
   <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="services.css">
   <link rel="icon" href="Skills/index logo.png">
 </head>
 
@@ -36,6 +37,7 @@
 
   <!-- Main Section conatins Basic Intro, Image and Work Experience! -->
   <main>
+    <!-- Introduction Section conatins Intro and Image! -->
     <section class="firstSection">
 
       <div class="leftSection">
@@ -209,7 +211,7 @@
             </div>
           </button>
           <a href="about.html" class="more">
-            <button type="button" class="btn">Know More About Me
+            <button type="button" class="btn">Know More About Me...
               <div class="star-1">
                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53"
                   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -300,36 +302,68 @@
     </section>
 
     <hr>
-    <div class="skills">
-      <span>What I have done so far</span>
-      <h1>Skills</h1>
-    </div>
-    <section class="secondSection">
 
-      <div class="box">
-        <div class="logo"><img src="Skills/html5.png" alt="HTML5 Logo"></div>
-        <div class="logo"><img src="Skills/CSS.png" alt="CSS Logo"></div>
-        <div class="logo"><img src="Skills/javascript.png" alt="Javascript Logo"></div>
-        <div class="logo"><img src="Skills/nodejs.png" alt="Node.JS Logo"></div>
-        <div class="logo"><img src="Skills/mongoDB.png" alt="MongoDB Logo"></div>
-      </div>
-
-      <div class="box">
-        <div class="logo"><img src="Skills/Git.png" alt="Git.png Logo"></div>
-        <div class="logo"><img src="Skills/expressjs.png" alt="expressjs Logo"></div>
-
-        <div class="logo"><img src="Skills/C.png" alt="C Logo"></div>
-        <div class="logo"><img src="Skills/C++.png" alt="C++ Logo"></div>
-        <div class="logo"><img src="Skills/Python.png" alt="Python Logo"></div>
-      </div>
-
-      <div class="box">
-        <div class="logo"><img src="Skills/Postman.png" alt="Postman Logo"></div>
-        <div class="logo"><img src="Skills/Github.png" alt="Github Logo"></div>
-        <div class="logo"><img src="Skills/VSCode.png" alt="VSCode Logo"></div>
-        <div class="logo"><img src="Skills/Figma.png" alt="Figma Logo"></div>
-        <div class="logo"><img src="Skills/chatgpt.png" alt="ChatGPT Logo"></div>
-      </div>
+    <!-- Skills Section conatins Technical Skills and Services! -->
+    <main class="services-main">
+      <h1 class="skillheadline">Skills</h1>
+      <section class="skills-section">
+        <h2>Front-end Programming Languages</h2>
+        <div class="skills-container">
+          <div class="skill" style="background-image: url('Skills/html5.png');">
+          </div>
+          <div class="skill" style="background-image: url('Skills/CSS.png');">
+          </div>
+          <div class="skill" style="background-image: url('Skills/javascript.png');">
+          </div>
+  
+  
+        </div>
+      </section>
+      <section class="skills-section">
+        <h2>Back-end Programming Languages</h2>
+        <div class="skills-container">
+          <div class="skill" style="background-image: url('Skills/nodejs.png');">
+          </div>
+          <div class="skill" style="background-image: url('Skills/expressjs.png');">
+          </div>
+          <div class="skill" style="background-image: url('Skills/mongoDB.png');">
+          </div>
+        </div>
+      </section>
+      <section class="technologies-section">
+        <h2>Cloud Platforms</h2>
+        <div class="technologies-container">
+          <div class="technology" style="background-image: url('Skills/Git.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/google\ cloud.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/aws.png');">
+          </div>
+        </div>
+      </section>
+  
+      <section class="technologies-section">
+        <h2>Front-end Frameworks</h2>
+        <div class="technologies-container">
+          <div class="technology" style="background-image: url('Skills/wordpress.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/Figma.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/Bootstrap.png');">
+          </div>
+      </section>
+  
+      <section class="technologies-section">
+        <h2>Tools I Use</h2>
+        <div class="technologies-container">
+          <div class="technology" style="background-image: url('Skills/VSCode.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/Postman.png');">
+          </div>
+          <div class="technology" style="background-image: url('Skills/chatgpt.png');">
+          </div>
+        </div>
+      </section>
       <a href="services.html" class="more">
         <button type="button" class="btn">Know More About My Skills & Services
           <div class="star-1">
@@ -412,8 +446,9 @@
           </div>
         </button>
       </a>
-    </section>
+    </main>
 
+    <!-- Project Section conatins Projects and Work Experience! -->
     <section class="thirdSection">
       <h1>Projects</h1>
 
@@ -433,7 +468,10 @@
 
       <div class="project">
         <h3>Spotify Clone</h3>
-        <a href="https://github.com/Sajal546/Spotify-Clone" target="_blank">Source Code</a>
+        <div>
+          <a href="https://github.com/Sajal546/Spotify-Clone" target="_blank">Source Code</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
       </div>
       <ul>
         <li>A Clone WebSite of Spotify Music Platform.</li>
@@ -443,7 +481,10 @@
 
       <div class="project">
         <h3>Netflix Clone</h3>
-        <a href="https://github.com/Sajal546/Netflix-Clone" target="_blank">Source Code</a>
+        <div>
+          <a href="https://github.com/Sajal546/Netflix-Clone" target="_blank">Source Code</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
       </div>
       <ul>
         <li>A Clone WebSite of Netflix Video Streaming Platform.</li>

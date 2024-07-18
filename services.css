@@ -26,6 +26,7 @@
     padding: 1em;
     border-radius: 8px;
     width: calc(50% - 2em);
+    height: 192px;
     max-width: 300px;
     position: relative;
     background-size: 50%;
@@ -39,7 +40,7 @@
     margin-bottom: 0.5em;
 }
 
-.services-main h1 {
+.services-main h2 {
     margin-bottom: 30px;
     color: rgb(253, 60, 214);
 }

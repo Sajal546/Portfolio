@@ -28,18 +28,6 @@
     margin: auto;
 }
 
-.secondSection {
-    max-width: 80vw;
-    margin: 80px auto;
-    height: auto;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(148, 123, 209);
-    border-radius: 20px;
-    padding: 60px;
-}
-
 main hr {
     border: 0;
     background: rgba(201, 156, 225, 0.979);
@@ -47,22 +35,10 @@ main hr {
     margin: 40px 84px;
 }
 
-.secondSection .box {
-    height: 80px;
-    padding: 56px 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 100px;
-    height: 100px;
-
+.skillheadline{
+    width: 5vw;
+    margin: auto;
+    color: rgb(24, 116, 209);
 }
 
 ul {
@@ -76,7 +52,7 @@ ul {
     overflow: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(24, 116, 209);
+    /* background-color: rgb(24, 116, 209); */
     border-radius: 20px;
     padding: 60px;
 
@@ -98,7 +74,10 @@ ul {
 }
 
 .thirdSection h1 {
-    color: rgb(255, 23, 209);
+    color: rgb(24, 116, 209);
+    width: 5vw;
+    margin: auto;
+    font-size: 32px;
 }
 
 .thirdSection li {
