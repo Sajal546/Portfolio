@@ -47,7 +47,7 @@ ul {
 
 .thirdSection {
     max-width: 80vw;
-    margin: 80px auto;
+    margin: 0 auto;
     height: auto;
     overflow: auto;
     display: flex;
