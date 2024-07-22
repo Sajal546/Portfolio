@@ -45,7 +45,7 @@ ul {
     list-style-position: inside;
 }
 
-.thirdSection {
+.projectSection {
     max-width: 80vw;
     margin: 0 auto;
     height: auto;
@@ -58,7 +58,7 @@ ul {
 
 }
 
-.thirdSection a:hover {
+.projectSection a:hover {
     text-decoration: underline;
 }
 
@@ -69,17 +69,17 @@ ul {
     margin-top: 20px;
 }
 
-.thirdSection h3 {
+.projectSection h3 {
     color: rgb(82, 255, 82);
 }
 
-.thirdSection h1 {
+.projectSection h1 {
     color: rgb(24, 116, 209);
     width: 5vw;
     margin: auto;
     font-size: 32px;
 }
 
-.thirdSection li {
+.projectSection li {
     margin: 5px;
 }
